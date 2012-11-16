@@ -39,20 +39,26 @@ class DslSeeder
   # Tools to revert the database into the dsl format that you can execute with run
   def self.generate_dsl_from_db(db)
     str = ''
-    str += "first '#{db.first.name}' do \n"
-    str += generate_dsl_of_steps( db.first.steps ) + "\n"
-    str += "  start_at #{db.first.start_date.year}, #{db.first.start_date.month}, #{db.first.start_date.day} \n"
-    str += "end \n \n"
-    
+    str += generate_dsl_of_state(db.first, 'first') do
+      "  start_at #{db.first.start_date.year}, #{db.first.start_date.month}, #{db.first.start_date.day}"
+    end    
     db.each(db.first.next_state) do |state|
-      str += "step '#{state.name}' do \n"
-      str += generate_dsl_of_steps( state.steps ) + "\n"
-      str += "end \n \n"
+      str += generate_dsl_of_state(state)
     end
     str
   end
   
   private 
+
+  def self.generate_dsl_of_state(state, key = 'step', &block)
+    a = []
+    a << "#{key} '#{state.name}' do "
+    a << generate_dsl_of_steps( state.steps )
+    a << "  country '#{state.country}'" unless state.default_country?
+    a << block.call if block_given?
+    a << "end \n \n"
+    a.join("\n")
+  end
 
   def self.generate_dsl_of_steps(steps)
     steps.map do |step| 

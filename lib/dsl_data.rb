@@ -9,7 +9,7 @@ Proc.new do # does not work with lambda, u know y ?
 first 'Illinois' do 
   city 'Chicago', 3
   city 'Rockford', 8
-  start_at 2013, 1, 31 
+  start_at 2013, 1, 31
 end 
  
 step 'Wisconsin' do 
@@ -63,6 +63,7 @@ end
  
 step 'British Colombia' do 
   city 'Vancouver', 4
+  country 'Canada'
 end 
  
 step 'Washington' do 
@@ -92,6 +93,7 @@ end
  
 step 'Mexico' do 
   city 'Tijuana', 2
+  country 'Mexico'
 end 
  
 step 'California' do 
@@ -238,6 +240,7 @@ end
 step 'Quebec' do 
   city 'Quebec', 2
   city 'Montreal', 3
+  country 'Canada'
 end 
  
 step 'Ontario' do 
@@ -278,7 +281,7 @@ step 'Illinois' do
   city 'Rockford', 6
   city 'Chicago', 2
 end 
-
+  
 # --------------------
 
 end # end proc.new

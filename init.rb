@@ -11,22 +11,22 @@ require 'strategies/table_strategy'
 
 puts 'Classes loaded'
 
-# DB = Database.new( DslSeeder.new )
+DB = Database.new( DslSeeder.new )
 # DB = Database.new( RubySeeder.new )
-data = DslSeeder.new do
-  first 'Bruxelles' do
-    city 'Etterbeek', 5
-    city 'Anderlecht', 1
-    start_at 2013, 1, 1
-  end
+# data = DslSeeder.new do
+#   first 'Bruxelles' do
+#     city 'Etterbeek', 5
+#     city 'Anderlecht', 1
+#     start_at 2013, 1, 1
+#   end
 
-  step 'Brabant Wallon' do
-    travel 'Namur', 1
-    city 'Namur', 2
-    city 'Lasne', 4
-  end
-end
-DB = Database.new( data )
+#   step 'Brabant Wallon' do
+#     travel 'Namur', 1
+#     city 'Namur', 2
+#     city 'Lasne', 4
+#   end
+# end
+# DB = Database.new( data )
 
 puts 'DB loaded'
 

@@ -21,8 +21,12 @@ class State
     @steps << step
   end
 
-  def country
-    @country || 'USA'
+  def default_country?
+    @country == default_country
+  end
+
+  def default_country
+    'USA'
   end
 
   def date_range
