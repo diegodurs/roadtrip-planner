@@ -1,6 +1,6 @@
 = Raodtrip planner
 
-This is small ruby app that I've build to easily format a trip in html or other.
+This is small ruby app that I've build to easily format a trip in html or in any other format.
 You specify the trip with a simple DSL that looks like this:
 
   first 'Bruxelles' do
@@ -15,19 +15,25 @@ You specify the trip with a simple DSL that looks like this:
     city 'Lasne', 4
   end
 
-You have to specify a first "step" including a start date. Each step has a last several days. The dates are computed from the start_at of the first step and the number of days of each step.
+You have to specify a first "step" including a start date. Each step lasts a few days. The dates are computed from the start_at of the first step and the number of days of each sub-step.
+
+To print the database, you can use different strategies. I only implemented the table (in html) strategy.
 
 == Why do this?
 
-This is just for training. The app uses some design patterns (Strategy pattern, Template pattern), and could have use a bit more of the Composite pattern for the steps (only City and Travel use the same interface AbstractStep, the class State could also have been inherited from AbstractStep).
+This is just for training. The app uses some design patterns (Strategy pattern, Template pattern), and could have use a bit more of the Composite pattern for the steps (only City and Travel use the same interface AbstractStep, the class State could also have been inherited from it).
 
 This app also use metaprogramming and lots of procs and blocs to stay DRY.
 
-There's not persitent database. I only use the DSL to load the database. I also have method creating the DSL's string of the current database in order to save it in a human friendly format.
-
-== Testing
-There's not test. The goal was not to play with testing.
+There's not persitent database. I only use the DSL to load the database. I also have method creating a DSL's string of the current database in order to save it in a human friendly format to easily update it at any time.
 
 == Usage
 
 Check the init.rb file.
+
+== What's interesting?
+Not much. But it's a simple app that use some more or less "advance" concepts of ruby.
+Also, I've tried to have the simplest code that is easy to reuse. For that, most of the methods and classes are really small. 
+It's quite low coupled, but it could be improved.
+
+
