@@ -1,0 +1,1037 @@
+--- &70303527913740 !ruby/object:State
+name: Illinois
+cities:
+- !ruby/struct:City
+  name: Chicago
+  nb_days: 3
+  contacts: !!null 
+  parent: *70303527913740
+- !ruby/struct:City
+  name: Rockford
+  nb_days: 8
+  contacts: !!null 
+  parent: *70303527913740
+start_date: 2013-01-31
+next_state: &70303527912200 !ruby/object:State
+  name: Wisconsin
+  cities:
+  - !ruby/struct:City
+    name: Milwaukee
+    nb_days: 2
+    contacts: !!null 
+    parent: *70303527912200
+  - !ruby/struct:City
+    name: Green Bay
+    nb_days: 1
+    contacts: !!null 
+    parent: *70303527912200
+  - !ruby/struct:City
+    name: Madison
+    nb_days: 2
+    contacts: !!null 
+    parent: *70303527912200
+  start_date: 2013-02-11
+  next_state: &70303527911760 !ruby/object:State
+    name: Minnesota
+    cities:
+    - !ruby/struct:City
+      name: Minneapolis
+      nb_days: 3
+      contacts: !!null 
+      parent: *70303527911760
+    - !ruby/struct:City
+      name: Saint Cloud
+      nb_days: 2
+      contacts: !!null 
+      parent: *70303527911760
+    start_date: 2013-02-16
+    next_state: &70303527911440 !ruby/object:State
+      name: South Dakota
+      cities:
+      - !ruby/struct:City
+        name: Sioux Falls
+        nb_days: 2
+        contacts: !!null 
+        parent: *70303527911440
+      start_date: 2013-02-21
+      next_state: &70303527911140 !ruby/object:State
+        name: North Dakota
+        cities:
+        - !ruby/struct:City
+          name: Fargo
+          nb_days: 1
+          contacts: !!null 
+          parent: *70303527911140
+        - !ruby/struct:City
+          name: Bismarck
+          nb_days: 2
+          contacts: !!null 
+          parent: *70303527911140
+        start_date: 2013-02-23
+        next_state: &70303527910580 !ruby/object:State
+          name: South Dakota
+          cities:
+          - !ruby/struct:City
+            name: Keystone
+            nb_days: 1
+            contacts: !!null 
+            parent: *70303527910580
+          - !ruby/struct:City
+            name: Custer
+            nb_days: 2
+            contacts: !!null 
+            parent: *70303527910580
+          start_date: 2013-02-26
+          next_state: &70303527910420 !ruby/object:State
+            name: Wyoming
+            cities:
+            - !ruby/struct:City
+              name: Cheyenne
+              nb_days: 2
+              contacts: !!null 
+              parent: *70303527910420
+            start_date: 2013-03-01
+            next_state: &70303527909960 !ruby/object:State
+              name: Colorado
+              cities:
+              - !ruby/struct:City
+                name: Denver
+                nb_days: 2
+                contacts: !!null 
+                parent: *70303527909960
+              - !ruby/struct:City
+                name: Colorado Springs
+                nb_days: 2
+                contacts: !!null 
+                parent: *70303527909960
+              - !ruby/struct:City
+                name: Breckenridge
+                nb_days: 5
+                contacts: !!null 
+                parent: *70303527909960
+              - !ruby/struct:City
+                name: Aspen
+                nb_days: 5
+                contacts: !!null 
+                parent: *70303527909960
+              start_date: 2013-03-03
+              next_state: &70303527909400 !ruby/object:State
+                name: Utah
+                cities:
+                - !ruby/struct:City
+                  name: Salt Lake City
+                  nb_days: 3
+                  contacts: !!null 
+                  parent: *70303527909400
+                start_date: 2013-03-17
+                next_state: &70303527909180 !ruby/object:State
+                  name: Montana
+                  cities:
+                  - !ruby/struct:City
+                    name: Yellowstone
+                    nb_days: 4
+                    contacts: !!null 
+                    parent: *70303527909180
+                  start_date: 2013-03-20
+                  next_state: &70303527908840 !ruby/object:State
+                    name: Washington
+                    cities:
+                    - !ruby/struct:City
+                      name: Spokane
+                      nb_days: 2
+                      contacts: !!null 
+                      parent: *70303527908840
+                    - !ruby/struct:City
+                      name: Seattle
+                      nb_days: 6
+                      contacts: !!null 
+                      parent: *70303527908840
+                    start_date: 2013-03-24
+                    next_state: &70303527908400 !ruby/object:State
+                      name: British Colombia
+                      cities:
+                      - !ruby/struct:City
+                        name: Vancouver
+                        nb_days: 4
+                        contacts: !!null 
+                        parent: *70303527908400
+                      start_date: 2013-04-01
+                      next_state: &70303527908100 !ruby/object:State
+                        name: Washington
+                        cities:
+                        - !ruby/struct:City
+                          name: Seattle
+                          nb_days: 1
+                          contacts: !!null 
+                          parent: *70303527908100
+                        start_date: 2013-04-05
+                        next_state: &70303527907780 !ruby/object:State
+                          name: Oregon
+                          cities:
+                          - !ruby/struct:City
+                            name: Portland
+                            nb_days: 3
+                            contacts: !!null 
+                            parent: *70303527907780
+                          - !ruby/struct:City
+                            name: Salem
+                            nb_days: 2
+                            contacts: !!null 
+                            parent: *70303527907780
+                          - !ruby/struct:City
+                            name: Eugene
+                            nb_days: 1
+                            contacts: !!null 
+                            parent: *70303527907780
+                          start_date: 2013-04-06
+                          next_state: &70303527907200 !ruby/object:State
+                            name: California
+                            cities:
+                            - !ruby/struct:Travel
+                              name: Sacramento
+                              nb_days: 2
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Sacramento
+                              nb_days: 3
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: San Fransisco
+                              nb_days: 5
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Palo Alto
+                              nb_days: 1
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Yosemite National Park
+                              nb_days: 3
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Sequoia National Park
+                              nb_days: 2
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:Travel
+                              name: Santa Barbara
+                              nb_days: 1
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Santa Barbara
+                              nb_days: 1
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Oxnard
+                              nb_days: 1
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Malibu
+                              nb_days: 1
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: Los Angeles
+                              nb_days: 10
+                              contacts: !!null 
+                              parent: *70303527907200
+                            - !ruby/struct:City
+                              name: San Diego
+                              nb_days: 3
+                              contacts: !!null 
+                              parent: *70303527907200
+                            start_date: 2013-04-12
+                            next_state: &70303527905880 !ruby/object:State
+                              name: Mexico
+                              cities:
+                              - !ruby/struct:City
+                                name: Tijuana
+                                nb_days: 2
+                                contacts: !!null 
+                                parent: *70303527905880
+                              start_date: 2013-05-15
+                              next_state: &70303527905620 !ruby/object:State
+                                name: California
+                                cities:
+                                - !ruby/struct:Travel
+                                  name: Death Valley
+                                  nb_days: 1
+                                  contacts: !!null 
+                                  parent: *70303527905620
+                                - !ruby/struct:City
+                                  name: Death Valley
+                                  nb_days: 2
+                                  contacts: !!null 
+                                  parent: *70303527905620
+                                start_date: 2013-05-17
+                                next_state: &70303527904980 !ruby/object:State
+                                  name: Nevada
+                                  cities:
+                                  - !ruby/struct:City
+                                    name: Las Vegas
+                                    nb_days: 4
+                                    contacts: !!null 
+                                    parent: *70303527904980
+                                  start_date: 2013-05-20
+                                  next_state: &70303527904860 !ruby/object:State
+                                    name: Arizona
+                                    cities:
+                                    - !ruby/struct:City
+                                      name: Grand Canyon National Park
+                                      nb_days: 3
+                                      contacts: !!null 
+                                      parent: *70303527904860
+                                    - !ruby/struct:City
+                                      name: Monument Valley
+                                      nb_days: 2
+                                      contacts: !!null 
+                                      parent: *70303527904860
+                                    - !ruby/struct:City
+                                      name: Flagstaff
+                                      nb_days: 1
+                                      contacts: !!null 
+                                      parent: *70303527904860
+                                    - !ruby/struct:City
+                                      name: Phoenix
+                                      nb_days: 2
+                                      contacts: !!null 
+                                      parent: *70303527904860
+                                    - !ruby/struct:Travel
+                                      name: Albuquerque
+                                      nb_days: 1
+                                      contacts: !!null 
+                                      parent: *70303527904860
+                                    start_date: 2013-05-24
+                                    next_state: &70303527903980 !ruby/object:State
+                                      name: New Mexico
+                                      cities:
+                                      - !ruby/struct:City
+                                        name: Albuquerque
+                                        nb_days: 2
+                                        contacts: !!null 
+                                        parent: *70303527903980
+                                      - !ruby/struct:Travel
+                                        name: Oklahoma
+                                        nb_days: 1
+                                        contacts: !!null 
+                                        parent: *70303527903980
+                                      start_date: 2013-06-02
+                                      next_state: &70303527903700 !ruby/object:State
+                                        name: Oklahoma
+                                        cities:
+                                        - !ruby/struct:City
+                                          name: Oklahoma City
+                                          nb_days: 3
+                                          contacts: !!null 
+                                          parent: *70303527903700
+                                        start_date: 2013-06-05
+                                        next_state: &70303527903340 !ruby/object:State
+                                          name: Texas
+                                          cities:
+                                          - !ruby/struct:City
+                                            name: Dallas
+                                            nb_days: 3
+                                            contacts: !!null 
+                                            parent: *70303527903340
+                                          - !ruby/struct:City
+                                            name: San Antonio
+                                            nb_days: 2
+                                            contacts: !!null 
+                                            parent: *70303527903340
+                                          - !ruby/struct:City
+                                            name: Houston
+                                            nb_days: 3
+                                            contacts: !!null 
+                                            parent: *70303527903340
+                                          - !ruby/struct:Travel
+                                            name: New Orleans
+                                            nb_days: 1
+                                            contacts: !!null 
+                                            parent: *70303527903340
+                                          start_date: 2013-06-08
+                                          next_state: &70303527902640 !ruby/object:State
+                                            name: Louisiana
+                                            cities:
+                                            - !ruby/struct:City
+                                              name: New Orelans
+                                              nb_days: 3
+                                              contacts: !!null 
+                                              parent: *70303527902640
+                                            start_date: 2013-06-17
+                                            next_state: &70303527902400 !ruby/object:State
+                                              name: Mississippi
+                                              cities:
+                                              - !ruby/struct:City
+                                                name: Jackson
+                                                nb_days: 1
+                                                contacts: !!null 
+                                                parent: *70303527902400
+                                              start_date: 2013-06-20
+                                              next_state: &70303527902140 !ruby/object:State
+                                                name: Tennesse
+                                                cities:
+                                                - !ruby/struct:City
+                                                  name: Memphis
+                                                  nb_days: 2
+                                                  contacts: !!null 
+                                                  parent: *70303527902140
+                                                - !ruby/struct:City
+                                                  name: Nashville
+                                                  nb_days: 2
+                                                  contacts: !!null 
+                                                  parent: *70303527902140
+                                                start_date: 2013-06-21
+                                                next_state: &70303527901740 !ruby/object:State
+                                                  name: Georgia
+                                                  cities:
+                                                  - !ruby/struct:City
+                                                    name: Atlanta
+                                                    nb_days: 3
+                                                    contacts: !!null 
+                                                    parent: *70303527901740
+                                                  start_date: 2013-06-25
+                                                  next_state: &70303527901420 !ruby/object:State
+                                                    name: Florida
+                                                    cities:
+                                                    - !ruby/struct:Travel
+                                                      name: Tampa
+                                                      nb_days: 1
+                                                      contacts: !!null 
+                                                      parent: *70303527901420
+                                                    - !ruby/struct:City
+                                                      name: Tampa
+                                                      nb_days: 2
+                                                      contacts: !!null 
+                                                      parent: *70303527901420
+                                                    - !ruby/struct:City
+                                                      name: Miami
+                                                      nb_days: 4
+                                                      contacts: !!null 
+                                                      parent: *70303527901420
+                                                    - !ruby/struct:City
+                                                      name: Orlando
+                                                      nb_days: 3
+                                                      contacts: !!null 
+                                                      parent: *70303527901420
+                                                    start_date: 2013-06-28
+                                                    next_state: &70303527901080 !ruby/object:State
+                                                      name: Georgia
+                                                      cities:
+                                                      - !ruby/struct:City
+                                                        name: Jacksontown
+                                                        nb_days: 1
+                                                        contacts: !!null 
+                                                        parent: *70303527901080
+                                                      - !ruby/struct:City
+                                                        name: Savannah
+                                                        nb_days: 2
+                                                        contacts: !!null 
+                                                        parent: *70303527901080
+                                                      start_date: 2013-07-08
+                                                      next_state: &70303527900380 !ruby/object:State
+                                                        name: South Carolina
+                                                        cities:
+                                                        - !ruby/struct:City
+                                                          name: Charleston
+                                                          nb_days: 2
+                                                          contacts: !!null 
+                                                          parent: *70303527900380
+                                                        start_date: 2013-07-11
+                                                        next_state: &70303527899960 !ruby/object:State
+                                                          name: Georgia
+                                                          cities:
+                                                          - !ruby/struct:City
+                                                            name: Augusta
+                                                            nb_days: 2
+                                                            contacts: !!null 
+                                                            parent: *70303527899960
+                                                          start_date: 2013-07-13
+                                                          next_state: &70303527899680 !ruby/object:State
+                                                            name: South Carolina
+                                                            cities:
+                                                            - !ruby/struct:Travel
+                                                              name: Charlotte
+                                                              nb_days: 1
+                                                              contacts: !!null 
+                                                              parent: *70303527899680
+                                                            start_date: 2013-07-15
+                                                            next_state: &70303527899160 !ruby/object:State
+                                                              name: North Carolina
+                                                              cities:
+                                                              - !ruby/struct:City
+                                                                name: Charlotte
+                                                                nb_days: 2
+                                                                contacts: !!null 
+                                                                parent: *70303527899160
+                                                              - !ruby/struct:Travel
+                                                                name: Richmond
+                                                                nb_days: 1
+                                                                contacts: !!null 
+                                                                parent: *70303527899160
+                                                              start_date: 2013-07-16
+                                                              next_state: &70303527898340 !ruby/object:State
+                                                                name: Virginia
+                                                                cities:
+                                                                - !ruby/struct:City
+                                                                  name: Richmond
+                                                                  nb_days: 1
+                                                                  contacts: !!null 
+                                                                  parent: *70303527898340
+                                                                start_date: 2013-07-19
+                                                                next_state: &70303527898160 !ruby/object:State
+                                                                  name: Washington
+                                                                    D.C.
+                                                                  cities:
+                                                                  - !ruby/struct:City
+                                                                    name: Washington
+                                                                    nb_days: 4
+                                                                    contacts: !!null 
+                                                                    parent: *70303527898160
+                                                                  start_date: 2013-07-20
+                                                                  next_state: &70303527897920 !ruby/object:State
+                                                                    name: Maryland
+                                                                    cities:
+                                                                    - !ruby/struct:City
+                                                                      name: Baltimore
+                                                                      nb_days: 2
+                                                                      contacts: !!null 
+                                                                      parent: *70303527897920
+                                                                    start_date: 2013-07-24
+                                                                    next_state: &70303527897460 !ruby/object:State
+                                                                      name: Pennsylvania
+                                                                      cities:
+                                                                      - !ruby/struct:City
+                                                                        name: Gettysburg
+                                                                        nb_days: 2
+                                                                        contacts: !!null 
+                                                                        parent: *70303527897460
+                                                                      start_date: 2013-07-26
+                                                                      next_state: &70303527897200 !ruby/object:State
+                                                                        name: Delaware
+                                                                        cities:
+                                                                        - !ruby/struct:City
+                                                                          name: Wilmington
+                                                                          nb_days: 1
+                                                                          contacts: !!null 
+                                                                          parent: *70303527897200
+                                                                        start_date: 2013-07-28
+                                                                        next_state: &70303527897080 !ruby/object:State
+                                                                          name: Pennsylvania
+                                                                          cities:
+                                                                          - !ruby/struct:City
+                                                                            name: Philadelphie
+                                                                            nb_days: 3
+                                                                            contacts: !!null 
+                                                                            parent: *70303527897080
+                                                                          start_date: 2013-07-29
+                                                                          next_state: &70303527896900 !ruby/object:State
+                                                                            name: New
+                                                                              Jersey
+                                                                            cities:
+                                                                            - !ruby/struct:City
+                                                                              name: Atlantic
+                                                                                City
+                                                                              nb_days: 2
+                                                                              contacts: !!null 
+                                                                              parent: *70303527896900
+                                                                            - !ruby/struct:Travel
+                                                                              name: Princeton
+                                                                              nb_days: 1
+                                                                              contacts: !!null 
+                                                                              parent: *70303527896900
+                                                                            - !ruby/struct:City
+                                                                              name: Princeton
+                                                                              nb_days: 1
+                                                                              contacts: !!null 
+                                                                              parent: *70303527896900
+                                                                            start_date: 2013-08-01
+                                                                            next_state: &70303527896280 !ruby/object:State
+                                                                              name: New-York
+                                                                              cities:
+                                                                              - !ruby/struct:City
+                                                                                name: New-York
+                                                                                nb_days: 7
+                                                                                contacts: !!null 
+                                                                                parent: *70303527896280
+                                                                              start_date: 2013-08-05
+                                                                              next_state: &70303527896160 !ruby/object:State
+                                                                                name: Connecticut
+                                                                                cities:
+                                                                                - !ruby/struct:City
+                                                                                  name: New
+                                                                                    Heaven
+                                                                                  nb_days: 2
+                                                                                  contacts: !!null 
+                                                                                  parent: *70303527896160
+                                                                                start_date: 2013-08-12
+                                                                                next_state: &70303527895960 !ruby/object:State
+                                                                                  name: Rhode
+                                                                                    Island
+                                                                                  cities:
+                                                                                  - !ruby/struct:City
+                                                                                    name: Providence
+                                                                                    nb_days: 2
+                                                                                    contacts: !!null 
+                                                                                    parent: *70303527895960
+                                                                                  start_date: 2013-08-14
+                                                                                  next_state: &70303527895560 !ruby/object:State
+                                                                                    name: Massachusetts
+                                                                                    cities:
+                                                                                    - !ruby/struct:City
+                                                                                      name: Boston
+                                                                                      nb_days: 4
+                                                                                      contacts: !!null 
+                                                                                      parent: *70303527895560
+                                                                                    start_date: 2013-08-16
+                                                                                    next_state: &70303527895440 !ruby/object:State
+                                                                                      name: Vermont
+                                                                                      cities:
+                                                                                      - !ruby/struct:Travel
+                                                                                        name: Hanover
+                                                                                        nb_days: 1
+                                                                                        contacts: !!null 
+                                                                                        parent: *70303527895440
+                                                                                      - !ruby/struct:City
+                                                                                        name: Hanover
+                                                                                        nb_days: 1
+                                                                                        contacts: !!null 
+                                                                                        parent: *70303527895440
+                                                                                      - !ruby/struct:Travel
+                                                                                        name: Portland
+                                                                                        nb_days: 1
+                                                                                        contacts: !!null 
+                                                                                        parent: *70303527895440
+                                                                                      start_date: 2013-08-20
+                                                                                      next_state: &70303527895000 !ruby/object:State
+                                                                                        name: Maine
+                                                                                        cities:
+                                                                                        - !ruby/struct:City
+                                                                                          name: Portland
+                                                                                          nb_days: 1
+                                                                                          contacts: !!null 
+                                                                                          parent: *70303527895000
+                                                                                        - !ruby/struct:Travel
+                                                                                          name: Halifax
+                                                                                          nb_days: 3
+                                                                                          contacts: !!null 
+                                                                                          parent: *70303527895000
+                                                                                        start_date: 2013-08-23
+                                                                                        next_state: &70303527894580 !ruby/object:State
+                                                                                          name: New
+                                                                                            Brunswick
+                                                                                          cities:
+                                                                                          - !ruby/struct:City
+                                                                                            name: Halifax
+                                                                                            nb_days: 2
+                                                                                            contacts: !!null 
+                                                                                            parent: *70303527894580
+                                                                                          - !ruby/struct:Travel
+                                                                                            name: Quebec
+                                                                                            nb_days: 2
+                                                                                            contacts: !!null 
+                                                                                            parent: *70303527894580
+                                                                                          start_date: 2013-08-27
+                                                                                          next_state: &70303527894240 !ruby/object:State
+                                                                                            name: Quebec
+                                                                                            cities:
+                                                                                            - !ruby/struct:City
+                                                                                              name: Quebec
+                                                                                              nb_days: 2
+                                                                                              contacts: !!null 
+                                                                                              parent: *70303527894240
+                                                                                            - !ruby/struct:City
+                                                                                              name: Montreal
+                                                                                              nb_days: 3
+                                                                                              contacts: !!null 
+                                                                                              parent: *70303527894240
+                                                                                            start_date: 2013-08-31
+                                                                                            next_state: &70303527893860 !ruby/object:State
+                                                                                              name: Ontario
+                                                                                              cities:
+                                                                                              - !ruby/struct:City
+                                                                                                name: Ottawa
+                                                                                                nb_days: 2
+                                                                                                contacts: !!null 
+                                                                                                parent: *70303527893860
+                                                                                              start_date: 2013-09-05
+                                                                                              next_state: &70303527893380 !ruby/object:State
+                                                                                                name: New
+                                                                                                  York
+                                                                                                cities:
+                                                                                                - !ruby/struct:City
+                                                                                                  name: Ithaca
+                                                                                                  nb_days: 1
+                                                                                                  contacts: !!null 
+                                                                                                  parent: *70303527893380
+                                                                                                - !ruby/struct:City
+                                                                                                  name: Buffalo
+                                                                                                  nb_days: 2
+                                                                                                  contacts: !!null 
+                                                                                                  parent: *70303527893380
+                                                                                                start_date: 2013-09-07
+                                                                                                next_state: &70303527893220 !ruby/object:State
+                                                                                                  name: Ontario
+                                                                                                  cities:
+                                                                                                  - !ruby/struct:City
+                                                                                                    name: Toronto
+                                                                                                    nb_days: 4
+                                                                                                    contacts: !!null 
+                                                                                                    parent: *70303527893220
+                                                                                                  start_date: 2013-09-10
+                                                                                                  next_state: &70303527893040 !ruby/object:State
+                                                                                                    name: Pennsylvania
+                                                                                                    cities:
+                                                                                                    - !ruby/struct:Travel
+                                                                                                      name: Pittsburh
+                                                                                                      nb_days: 1
+                                                                                                      contacts: !!null 
+                                                                                                      parent: *70303527893040
+                                                                                                    - !ruby/struct:City
+                                                                                                      name: Pittsburh
+                                                                                                      nb_days: 2
+                                                                                                      contacts: !!null 
+                                                                                                      parent: *70303527893040
+                                                                                                    start_date: 2013-09-14
+                                                                                                    next_state: &70303527892660 !ruby/object:State
+                                                                                                      name: Ohio
+                                                                                                      cities:
+                                                                                                      - !ruby/struct:City
+                                                                                                        name: Cleveland
+                                                                                                        nb_days: 2
+                                                                                                        contacts: !!null 
+                                                                                                        parent: *70303527892660
+                                                                                                      - !ruby/struct:City
+                                                                                                        name: Detroit
+                                                                                                        nb_days: 3
+                                                                                                        contacts: !!null 
+                                                                                                        parent: *70303527892660
+                                                                                                      - !ruby/struct:City
+                                                                                                        name: Cincinnati
+                                                                                                        nb_days: 2
+                                                                                                        contacts: !!null 
+                                                                                                        parent: *70303527892660
+                                                                                                      start_date: 2013-09-17
+                                                                                                      next_state: &70303527892300 !ruby/object:State
+                                                                                                        name: Kentucky
+                                                                                                        cities:
+                                                                                                        - !ruby/struct:City
+                                                                                                          name: Louisville
+                                                                                                          nb_days: 2
+                                                                                                          contacts: !!null 
+                                                                                                          parent: *70303527892300
+                                                                                                        start_date: 2013-09-24
+                                                                                                        next_state: &70303527892180 !ruby/object:State
+                                                                                                          name: Indiana
+                                                                                                          cities:
+                                                                                                          - !ruby/struct:City
+                                                                                                            name: Indianapolis
+                                                                                                            nb_days: 3
+                                                                                                            contacts: !!null 
+                                                                                                            parent: *70303527892180
+                                                                                                          - !ruby/struct:City
+                                                                                                            name: Shipshewana
+                                                                                                            nb_days: 1
+                                                                                                            contacts: !!null 
+                                                                                                            parent: *70303527892180
+                                                                                                          start_date: 2013-09-26
+                                                                                                          next_state: &70303527891760 !ruby/object:State
+                                                                                                            name: Illinois
+                                                                                                            cities:
+                                                                                                            - !ruby/struct:City
+                                                                                                              name: Chicago
+                                                                                                              nb_days: 1
+                                                                                                              contacts: !!null 
+                                                                                                              parent: *70303527891760
+                                                                                                            - !ruby/struct:City
+                                                                                                              name: Rockford
+                                                                                                              nb_days: 6
+                                                                                                              contacts: !!null 
+                                                                                                              parent: *70303527891760
+                                                                                                            - !ruby/struct:City
+                                                                                                              name: Chicago
+                                                                                                              nb_days: 2
+                                                                                                              contacts: !!null 
+                                                                                                              parent: *70303527891760
+                                                                                                            start_date: 2013-09-30
+                                                                                                            prev_state: *70303527892180
+                                                                                                            end_date: 2013-10-08
+                                                                                                            date_range: !ruby/struct:DateRange
+                                                                                                              start_date: 2013-09-30
+                                                                                                              end_date: 2013-10-08
+                                                                                                          prev_state: *70303527892300
+                                                                                                          end_date: 2013-09-29
+                                                                                                          date_range: !ruby/struct:DateRange
+                                                                                                            start_date: 2013-09-26
+                                                                                                            end_date: 2013-09-29
+                                                                                                        prev_state: *70303527892660
+                                                                                                        end_date: 2013-09-25
+                                                                                                        date_range: !ruby/struct:DateRange
+                                                                                                          start_date: 2013-09-24
+                                                                                                          end_date: 2013-09-25
+                                                                                                      prev_state: *70303527893040
+                                                                                                      end_date: 2013-09-23
+                                                                                                      date_range: !ruby/struct:DateRange
+                                                                                                        start_date: 2013-09-17
+                                                                                                        end_date: 2013-09-23
+                                                                                                    prev_state: *70303527893220
+                                                                                                    end_date: 2013-09-16
+                                                                                                    date_range: !ruby/struct:DateRange
+                                                                                                      start_date: 2013-09-14
+                                                                                                      end_date: 2013-09-16
+                                                                                                  prev_state: *70303527893380
+                                                                                                  end_date: 2013-09-13
+                                                                                                  date_range: !ruby/struct:DateRange
+                                                                                                    start_date: 2013-09-10
+                                                                                                    end_date: 2013-09-13
+                                                                                                prev_state: *70303527893860
+                                                                                                end_date: 2013-09-09
+                                                                                                date_range: !ruby/struct:DateRange
+                                                                                                  start_date: 2013-09-07
+                                                                                                  end_date: 2013-09-09
+                                                                                              prev_state: *70303527894240
+                                                                                              end_date: 2013-09-06
+                                                                                              date_range: !ruby/struct:DateRange
+                                                                                                start_date: 2013-09-05
+                                                                                                end_date: 2013-09-06
+                                                                                            prev_state: *70303527894580
+                                                                                            end_date: 2013-09-04
+                                                                                            date_range: !ruby/struct:DateRange
+                                                                                              start_date: 2013-08-31
+                                                                                              end_date: 2013-09-04
+                                                                                          prev_state: *70303527895000
+                                                                                          end_date: 2013-08-30
+                                                                                          date_range: !ruby/struct:DateRange
+                                                                                            start_date: 2013-08-27
+                                                                                            end_date: 2013-08-30
+                                                                                        prev_state: *70303527895440
+                                                                                        end_date: 2013-08-26
+                                                                                        date_range: !ruby/struct:DateRange
+                                                                                          start_date: 2013-08-23
+                                                                                          end_date: 2013-08-26
+                                                                                      prev_state: *70303527895560
+                                                                                      end_date: 2013-08-22
+                                                                                      date_range: !ruby/struct:DateRange
+                                                                                        start_date: 2013-08-20
+                                                                                        end_date: 2013-08-22
+                                                                                    prev_state: *70303527895960
+                                                                                    end_date: 2013-08-19
+                                                                                    date_range: !ruby/struct:DateRange
+                                                                                      start_date: 2013-08-16
+                                                                                      end_date: 2013-08-19
+                                                                                  prev_state: *70303527896160
+                                                                                  end_date: 2013-08-15
+                                                                                  date_range: !ruby/struct:DateRange
+                                                                                    start_date: 2013-08-14
+                                                                                    end_date: 2013-08-15
+                                                                                prev_state: *70303527896280
+                                                                                end_date: 2013-08-13
+                                                                                date_range: !ruby/struct:DateRange
+                                                                                  start_date: 2013-08-12
+                                                                                  end_date: 2013-08-13
+                                                                              prev_state: *70303527896900
+                                                                              end_date: 2013-08-11
+                                                                              date_range: !ruby/struct:DateRange
+                                                                                start_date: 2013-08-05
+                                                                                end_date: 2013-08-11
+                                                                            prev_state: *70303527897080
+                                                                            end_date: 2013-08-04
+                                                                            date_range: !ruby/struct:DateRange
+                                                                              start_date: 2013-08-01
+                                                                              end_date: 2013-08-04
+                                                                          prev_state: *70303527897200
+                                                                          end_date: 2013-07-31
+                                                                          date_range: !ruby/struct:DateRange
+                                                                            start_date: 2013-07-29
+                                                                            end_date: 2013-07-31
+                                                                        prev_state: *70303527897460
+                                                                        end_date: 2013-07-28
+                                                                        date_range: !ruby/struct:DateRange
+                                                                          start_date: 2013-07-28
+                                                                          end_date: 2013-07-28
+                                                                      prev_state: *70303527897920
+                                                                      end_date: 2013-07-27
+                                                                      date_range: !ruby/struct:DateRange
+                                                                        start_date: 2013-07-26
+                                                                        end_date: 2013-07-27
+                                                                    prev_state: *70303527898160
+                                                                    end_date: 2013-07-25
+                                                                    date_range: !ruby/struct:DateRange
+                                                                      start_date: 2013-07-24
+                                                                      end_date: 2013-07-25
+                                                                  prev_state: *70303527898340
+                                                                  end_date: 2013-07-23
+                                                                  date_range: !ruby/struct:DateRange
+                                                                    start_date: 2013-07-20
+                                                                    end_date: 2013-07-23
+                                                                prev_state: *70303527899160
+                                                                end_date: 2013-07-19
+                                                                date_range: !ruby/struct:DateRange
+                                                                  start_date: 2013-07-19
+                                                                  end_date: 2013-07-19
+                                                              prev_state: *70303527899680
+                                                              end_date: 2013-07-18
+                                                              date_range: !ruby/struct:DateRange
+                                                                start_date: 2013-07-16
+                                                                end_date: 2013-07-18
+                                                            prev_state: *70303527899960
+                                                            end_date: 2013-07-15
+                                                            date_range: !ruby/struct:DateRange
+                                                              start_date: 2013-07-15
+                                                              end_date: 2013-07-15
+                                                          prev_state: *70303527900380
+                                                          end_date: 2013-07-14
+                                                          date_range: !ruby/struct:DateRange
+                                                            start_date: 2013-07-13
+                                                            end_date: 2013-07-14
+                                                        prev_state: *70303527901080
+                                                        end_date: 2013-07-12
+                                                        date_range: !ruby/struct:DateRange
+                                                          start_date: 2013-07-11
+                                                          end_date: 2013-07-12
+                                                      prev_state: *70303527901420
+                                                      end_date: 2013-07-10
+                                                      date_range: !ruby/struct:DateRange
+                                                        start_date: 2013-07-08
+                                                        end_date: 2013-07-10
+                                                    prev_state: *70303527901740
+                                                    end_date: 2013-07-07
+                                                    date_range: !ruby/struct:DateRange
+                                                      start_date: 2013-06-28
+                                                      end_date: 2013-07-07
+                                                  prev_state: *70303527902140
+                                                  end_date: 2013-06-27
+                                                  date_range: !ruby/struct:DateRange
+                                                    start_date: 2013-06-25
+                                                    end_date: 2013-06-27
+                                                prev_state: *70303527902400
+                                                end_date: 2013-06-24
+                                                date_range: !ruby/struct:DateRange
+                                                  start_date: 2013-06-21
+                                                  end_date: 2013-06-24
+                                              prev_state: *70303527902640
+                                              end_date: 2013-06-20
+                                              date_range: !ruby/struct:DateRange
+                                                start_date: 2013-06-20
+                                                end_date: 2013-06-20
+                                            prev_state: *70303527903340
+                                            end_date: 2013-06-19
+                                            date_range: !ruby/struct:DateRange
+                                              start_date: 2013-06-17
+                                              end_date: 2013-06-19
+                                          prev_state: *70303527903700
+                                          end_date: 2013-06-16
+                                          date_range: !ruby/struct:DateRange
+                                            start_date: 2013-06-08
+                                            end_date: 2013-06-16
+                                        prev_state: *70303527903980
+                                        end_date: 2013-06-07
+                                        date_range: !ruby/struct:DateRange
+                                          start_date: 2013-06-05
+                                          end_date: 2013-06-07
+                                      prev_state: *70303527904860
+                                      end_date: 2013-06-04
+                                      date_range: !ruby/struct:DateRange
+                                        start_date: 2013-06-02
+                                        end_date: 2013-06-04
+                                    prev_state: *70303527904980
+                                    end_date: 2013-06-01
+                                    date_range: !ruby/struct:DateRange
+                                      start_date: 2013-05-24
+                                      end_date: 2013-06-01
+                                  prev_state: *70303527905620
+                                  end_date: 2013-05-23
+                                  date_range: !ruby/struct:DateRange
+                                    start_date: 2013-05-20
+                                    end_date: 2013-05-23
+                                prev_state: *70303527905880
+                                end_date: 2013-05-19
+                                date_range: !ruby/struct:DateRange
+                                  start_date: 2013-05-17
+                                  end_date: 2013-05-19
+                              prev_state: *70303527907200
+                              end_date: 2013-05-16
+                              date_range: !ruby/struct:DateRange
+                                start_date: 2013-05-15
+                                end_date: 2013-05-16
+                            prev_state: *70303527907780
+                            end_date: 2013-05-14
+                            date_range: !ruby/struct:DateRange
+                              start_date: 2013-04-12
+                              end_date: 2013-05-14
+                          prev_state: *70303527908100
+                          end_date: 2013-04-11
+                          date_range: !ruby/struct:DateRange
+                            start_date: 2013-04-06
+                            end_date: 2013-04-11
+                        prev_state: *70303527908400
+                        end_date: 2013-04-05
+                        date_range: !ruby/struct:DateRange
+                          start_date: 2013-04-05
+                          end_date: 2013-04-05
+                      prev_state: *70303527908840
+                      country: Canada
+                      end_date: 2013-04-04
+                      date_range: !ruby/struct:DateRange
+                        start_date: 2013-04-01
+                        end_date: 2013-04-04
+                    prev_state: *70303527909180
+                    end_date: 2013-03-31
+                    date_range: !ruby/struct:DateRange
+                      start_date: 2013-03-24
+                      end_date: 2013-03-31
+                  prev_state: *70303527909400
+                  end_date: 2013-03-23
+                  date_range: !ruby/struct:DateRange
+                    start_date: 2013-03-20
+                    end_date: 2013-03-23
+                prev_state: *70303527909960
+                end_date: 2013-03-19
+                date_range: !ruby/struct:DateRange
+                  start_date: 2013-03-17
+                  end_date: 2013-03-19
+              prev_state: *70303527910420
+              end_date: 2013-03-16
+              date_range: !ruby/struct:DateRange
+                start_date: 2013-03-03
+                end_date: 2013-03-16
+            prev_state: *70303527910580
+            end_date: 2013-03-02
+            date_range: !ruby/struct:DateRange
+              start_date: 2013-03-01
+              end_date: 2013-03-02
+          prev_state: *70303527911140
+          end_date: 2013-02-28
+          date_range: !ruby/struct:DateRange
+            start_date: 2013-02-26
+            end_date: 2013-02-28
+        prev_state: *70303527911440
+        end_date: 2013-02-25
+        date_range: !ruby/struct:DateRange
+          start_date: 2013-02-23
+          end_date: 2013-02-25
+      prev_state: *70303527911760
+      end_date: 2013-02-22
+      date_range: !ruby/struct:DateRange
+        start_date: 2013-02-21
+        end_date: 2013-02-22
+    prev_state: *70303527912200
+    end_date: 2013-02-20
+    date_range: !ruby/struct:DateRange
+      start_date: 2013-02-16
+      end_date: 2013-02-20
+  prev_state: *70303527913740
+  end_date: 2013-02-15
+  date_range: !ruby/struct:DateRange
+    start_date: 2013-02-11
+    end_date: 2013-02-15
+end_date: 2013-02-10
+date_range: !ruby/struct:DateRange
+  start_date: 2013-01-31
+  end_date: 2013-02-10

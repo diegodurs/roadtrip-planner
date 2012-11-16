@@ -1,0 +1,33 @@
+= Raodtrip planner
+
+This is small ruby app that I've build to easily format a trip in html or other.
+You specify the trip with a simple DSL that looks like this:
+
+  first 'Bruxelles' do
+    city 'Etterbeek', 5
+    city 'Anderlecht', 1
+    start_at 2013, 1, 1
+  end
+
+  step 'Brabant Wallon' do
+    travel 'Namur', 1
+    city 'Namur', 2
+    city 'Lasne', 4
+  end
+
+You have to specify a first "step" including a start date. Each step has a last several days. The dates are computed from the start_at of the first step and the number of days of each step.
+
+== Why do this?
+
+This is just for training. The app uses some design patterns (Strategy pattern, Template pattern), and could have use a bit more of the Composite pattern for the steps (only City and Travel use the same interface AbstractStep, the class State could also have been inherited from AbstractStep).
+
+This app also use metaprogramming and lots of procs and blocs to stay DRY.
+
+There's not persitent database. I only use the DSL to load the database. I also have method creating the DSL's string of the current database in order to save it in a human friendly format.
+
+== Testing
+There's not test. The goal was not to play with testing.
+
+== Usage
+
+Check the init.rb file.
