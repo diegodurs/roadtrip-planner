@@ -25,7 +25,10 @@ This is just for training. The app uses some design patterns (Strategy pattern, 
 
 This app also use metaprogramming and lots of procs and blocs to stay DRY.
 
-There's not persitent database. I only use the DSL to load the database. I also have method creating a DSL's string of the current database in order to save it in a human friendly format to easily update it at any time.
+There's not persitent database. I only use the DSL to load the data. I also have method creating a DSL's string of the current database in order to save it in a human friendly format to easily update it at any time.
+The database is a double linked list that you can access from the first element. A step is a State we are passing by. Each step includes several cities and travels.
+For the complete example of our roadtrip check the file lib/dsl_data.rb.
+To understant how the DSL work, look at lib/dsl_seeder.rb and lib/dsl_state.rb.
 
 == Usage
 
